@@ -1,150 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 p {
-    width: 440px;
+  width: 440px;
 }
 
-
-
 .container {
-    padding: 246px 162px 86px 162px;
-    display: flex;
+  display: flex;
 }
 
 #logo {
-    display: flex;
-    gap: 11px;
-    margin-bottom: 20px;
-    color: #0B1837;
+  display: flex;
+  gap: 11px;
+  margin-bottom: 20px;
+  color: #0b1837;
 }
 
 #logo span {
-    font-size: 18.1156px;
-    line-height: 27px;
-    font-weight: 300;
+  font-size: 18.1156px;
+  line-height: 27px;
+  font-weight: 300;
 }
 
 .tittle1,
 .tittle2 {
-    width: 570px;
+  width: 570px;
 }
 
 .tittle1 h1 {
-    color: #0B1837;
-    font-weight: 700;
-    font-size: 37px;
-    line-height: 46px;
-    margin-bottom: 20px;
-
+  color: #0b1837;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 46px;
+  margin-bottom: 20px;
 }
 
 .tittle1 span {
-    color: #346CFD
+  color: #346cfd;
 }
 
 .tittle p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: rgba(11, 24, 55, 0.8);
-
-
-
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(11, 24, 55, 0.8);
 }
 
 .tittle p span {
-    color: #0B1837;
-    font-weight: 700;
+  color: #0b1837;
+  font-weight: 700;
 }
 
 .tittle2 {
-    color: rgba(11, 24, 55, 0.8);
-    font-size: 14px;
-    line-height: 19px;
-    font-weight: 400;
-    margin-top: 40px;
-
+  color: rgba(11, 24, 55, 0.8);
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  margin-top: 40px;
 }
 
 .tittle2 h3 {
-    font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 20px;
-
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .tittle2 p span {
-    color: #346CFD;
-    text-transform: uppercase;
-
+  color: #346cfd;
+  text-transform: uppercase;
 }
 
 .tittle2 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-
 .btns {
-    display: flex;
-    gap: 20px;
-    border: 0;
-    font-weight: normal;
-    margin-top: 40px;
-
+  display: flex;
+  gap: 20px;
+  border: 0;
+  font-weight: normal;
+  margin-top: 40px;
 }
 
 .btns button {
-    display: flex;
-    color: #fff;
-    font-weight: 400;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 143px;
-    height: 45px;
-    background: #346CFD;
-    border-radius: 10px;
-    border: 0px;
-
+  display: flex;
+  color: #fff;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 143px;
+  height: 45px;
+  background: #346cfd;
+  border-radius: 10px;
+  border: 0px;
+}
+.btns a {
+  text-decoration: none;
 }
 
 .button2 {
-    background: #fff !important;
-    color: #346CFD !important;
-    border: 1px solid !important;
+  background: #fff !important;
+  color: #346cfd !important;
+  border: 1px solid !important;
+}
+.tittle {
+  margin-top: 246px;
+  margin-left: 150px;
+  width: 100%;
+}
+
+.images {
+  position: relative;
 }
 
 .img1 {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  z-index: -1;
+  right: 0;
 }
 
 .img2 {
-    position: absolute;
-
-
-    left: 787px;
-    top: 320px;
+  position: relative;
+  margin-top: 270px;
+  margin-right: 130px;
 }
 
 .footer {
-    margin: 214px 162px 83px 162px;
+  margin-top: 200px;
+  margin-left: 150px;
 }
 
 .footer a {
-    margin-right: 25px;
-    text-decoration: none;
-
+  margin-right: 25px;
+  text-decoration: none;
 }
+
+@media screen and (max-width: 500px) {
+  p {
+    width: 340px;
+  }
+  .tittle {
+    margin-top: 100px;
+    margin-left: 70px !important;
+    height: 300px;
+  }
+  .footer {
+    margin-top: 150px;
+    margin-left: 70px;
+  }
+  .img1 {
+    max-width: 650px;
+    position: absolute;
+  }
+  .img2 {
+    position: relative;
+    margin-top: 150px;
+    margin-right: 20px;
+  }
+  .images {
+    left: 0;
+  }
+}
+
